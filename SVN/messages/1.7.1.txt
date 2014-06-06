@@ -1,0 +1,39 @@
+Sublime SVN 1.7.1 Changelog:
+
+Bug Fixes
+---------
+
+ - Fixed bugs with running operations on single files on Windows machines
+
+ - Fixed encoding errors when attach a Windows console to Sublime Text for
+   user interaction
+
+ - Added missing help text for the "L" status when committing
+
+ - Fixed writing the debug log to a file in ST3
+
+ - Resolved an error when trying to use a custom diff command in ST3
+
+ - Fixed a bug when a new working copy was discovered while the background
+   status operation was running
+
+ - Changed how certain DLLs were being loaded on Windows to prevent Windows
+   from loading OpenSSL DLLs that are older than the versions shipped with
+   Sublime SVN
+
+ - Fixed checking out a working copy in ST3 when the current window does not
+   have any open folders
+
+ - Resolved an issue with Revert, Interactive where checkbox logic was
+   backwards
+
+ - Corrected an issue where warnings form SVN on Windows were not being treated
+   as an error
+
+ - Fixed the output of the Info command to always use backslases for file paths
+   on Windows
+
+ - The DISPLAY environmental variable on Linux is no longer wiped when running
+   commands that may benefit from it, such as Diff
+
+ - Fixed a bug with svn+ssh:// repositories in ST2 on Windows

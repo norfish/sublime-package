@@ -1,0 +1,4 @@
+[
+    {"keys": ["ctrl+shift+r"],"command": "qunar_sync_this_file"},
+    {"keys": ["shif+alt+r"],"command": "qunar_sync"}
+]

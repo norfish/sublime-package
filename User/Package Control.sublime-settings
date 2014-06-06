@@ -1,0 +1,28 @@
+{
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"CTags",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"Gist",
+		"HTML Mustache",
+		"HTML Page Snippets",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"JsFormat",
+		"JSHint",
+		"JSHint Gutter",
+		"Modific",
+		"QunarSync",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"sublimelint",
+		"Sublimerge Pro",
+		"SVN",
+		"Theme - Soda",
+		"Theme - Sodarized"
+	]
+}

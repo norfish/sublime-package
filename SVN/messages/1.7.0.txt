@@ -1,0 +1,73 @@
+Sublime SVN 1.7.0 Changelog:
+
+New Features
+
+ - Subversion 1.8 support
+
+ - "svn+ssh://" protocol support on Windows via custom Plink executable
+
+ - New "svn_ssh_options" setting for controling authentication of
+   "svn+ssh://" repositories
+
+ - Support for repositories that have up to two folder paths before the
+   logical root of the repository. This is the case when an SVN repository
+   contains multiple projects, each with their own "/trunk", "/branches" and
+   "/tags" structure. For instance, when the root of the SVN repository is
+   "https://svn.example.com/", but a specific project is stored at 
+   "https://svn.example.com/projects/myproject/trunk".
+
+ - Added check to ensure the SVN package is not being improperly synced
+   from OS X/Linux to Windows, and thus missing the Windows ".exe" files
+
+ - Improved detection of encountering working copies created with a newer
+   version of Subversion than is available to the user
+
+ - Rearchitecture of Windows subprocess backend and custom Subversion and
+   Plink binaries, resulting in less process spawning and improved
+   interactive authentication
+
+
+Bug Fixes
+
+ - Fixed handling of file names with the "@" symbol in them
+
+ - Added the "sublime_text_binary" setting to help with checking out a
+   repository to a new folder on ST2
+
+ - Fixed a bug with incorrectly detecting an unexpected error as a package
+   upgrade event
+
+ - Fixed a bug displaying log dates on Windows
+
+ - Fixed an encoding issue when writing to log files in ST3
+
+ - Corrected an issue with the "Ignore" and "Unignore" command on ST3
+
+ - Improved capturing command output when an authentication prompt was
+   displayed in the middle of an operation such as an Update
+
+ - Changed forking of "svn" processes on posix platforms to unset the
+   "DISPLAY" environmental variable to prevent the flash of an GUI SSH
+   password prompt. Sublime SVN already proxies prompts to the Sublime
+   Text interface.
+
+ - Fixed a selection issue with pre-selecting the branch name when branching
+   a repository that has a path prefix
+
+ - Corrected a bug caching the SSH password for an "svn+ssh://" repository
+   when not using SSH keys on ST3
+
+ - Resolved an issue reading the debug settings when the package is first
+   loaded by ST3
+
+ - Fixed a bug with resolving a Tree Conflict on OS X resulting in an error
+   message about running code in the main thread
+
+ - Fixed an error with an unbound variable in "threads.py" during specific
+   error conditions
+
+ - Improved handling of unseen SSL certificates on Windows when being
+   prompted for authentication information
+
+ - Fixed a bug using an SVN working copy via a network share on Windows when
+   the hostname contained characters other than letters and numbers

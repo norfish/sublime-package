@@ -1,0 +1,10 @@
+[
+    { "caption": "-" },
+    {
+        "caption": "QunarSync",
+        "children": [
+            {"caption": "Sync This File", "command": "qunar_sync_this_file"},
+            {"caption": "Sync All", "command": "qunar_sync"}
+        ]
+    }
+]

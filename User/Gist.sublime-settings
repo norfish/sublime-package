@@ -1,0 +1,11 @@
+{
+    // Your GitHub API token
+    // see: https://github.com/condemil/Gist#generating-access-token
+    "token": "90334ead2f1ac42b2ac882cca703562075297edd"
+
+    // Limit to gists with specific prefix
+    //"gist_prefix": "Snippet:",
+
+    // Limit to gists with specific tag (#tag)
+    //"gist_tag": "snippet"
+}

@@ -1,0 +1,6 @@
+[
+    { "caption": "-" },
+    {
+        "caption": "QunarSync", "command": "qunar_sync_this_file", "args": {"paths": []}
+    }
+]
